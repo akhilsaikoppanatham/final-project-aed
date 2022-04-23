@@ -32,7 +32,7 @@ public class DB4OUtil {
             conn.close();
         }
     }
-
+    
     private ObjectContainer createConnection() {
         try {
 
