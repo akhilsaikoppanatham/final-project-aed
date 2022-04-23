@@ -36,4 +36,14 @@ public class EnterpriseDirectory {
             enterprise = new GarageEnterprise(name);
             enterpriseList.add(enterprise);
         }
+        if (type == Enterprise.EnterpriseType.AutoMechanicEnterprise) {
+            enterprise = new AutoMechanicEnterprise(name);
+            enterpriseList.add(enterprise);
+        }
+        if (type == Enterprise.EnterpriseType.SalesEnterprise) {
+            enterprise = new SalesEnterprise(name);
+            enterpriseList.add(enterprise);
+        }
+        return enterprise;
+
 }
