@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class GarageEnterprise  extends Enterprise{
      public GarageEnterprise(String name){
         super(name,Enterprise.EnterpriseType.GarageEnterprise);
-        //updated
+       
         @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
