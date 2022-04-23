@@ -4,16 +4,15 @@
  */
 package Bussiness.DB4OUtil;
 
+import java.nio.file.Paths;
+
 /**
  *
  * @author akhilsaikoppanatham
  */
 public class DB4OUtil {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        // TODO code application logic here
-    }
+    private static final String FILENAME = Paths.get("Databank.db4o").toAbsolutePath().toString();// path to the data store
+    private static DB4OUtil dB4OUtil;
+    
 }
