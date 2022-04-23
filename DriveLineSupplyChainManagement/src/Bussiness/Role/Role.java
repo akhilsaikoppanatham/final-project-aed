@@ -4,6 +4,9 @@
  */
 package Bussiness.Role;
 
+import Business.EcoSystem;
+import javax.swing.JPanel;
+
 /**
  *
  * @author akhilsaikoppanatham
@@ -36,6 +39,17 @@ public class Role {
         public String toString() {
             return value;
         }
+    }
+
+    public abstract JPanel createWorkArea(JPanel userProcessContainer,
+            UserAccount account,
+            Organization organization,
+            Enterprise enterprise,
+            EcoSystem business);
+
+    @Override
+    public String toString() {
+        return this.getClass().getName();
     }
 
 }
