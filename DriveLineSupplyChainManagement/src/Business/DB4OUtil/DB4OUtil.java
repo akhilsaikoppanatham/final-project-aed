@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
  */
-package Bussiness.DB4OUtil;
+package Business.DB4OUtil;
 import Business.ConfigureASystem;
 import Business.EcoSystem;
 import com.db4o.Db4oEmbedded;
