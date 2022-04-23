@@ -24,5 +24,16 @@ public class EnterpriseDirectory {
     public EnterpriseDirectory() {
         enterpriseList = new ArrayList<Enterprise>();
     }
+//Create enterprise
+    public Enterprise createAndAddEnterprise(String name, Enterprise.EnterpriseType type) {
+        Enterprise enterprise = null;
 
+        if (type == Enterprise.EnterpriseType.OutletEnterprise) {
+            enterprise = new OutletEnterprise(name);
+            enterpriseList.add(enterprise);
+        }
+        if (type == Enterprise.EnterpriseType.GarageEnterprise) {
+            enterprise = new GarageEnterprise(name);
+            enterpriseList.add(enterprise);
+        }
 }
