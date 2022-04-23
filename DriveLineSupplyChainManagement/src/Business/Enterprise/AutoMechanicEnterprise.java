@@ -50,5 +50,34 @@ public class AutoMechanicEnterprise extends Enterprise {
     public void setFixType(String fixType) {
         this.fixType = fixType;
     }
+ public int getMinimumThreshold() {
+        return minimumThreshold;
+    }
+
+    public void setMinimumThreshold(int minimumThreshold) {
+        this.minimumThreshold = minimumThreshold;
+    }
+
+    public int getMaximumThreshold() {
+        return maximumThreshold;
+    }
+
+    public void setMaximumThreshold(int maximumThreshold) {
+        this.maximumThreshold = maximumThreshold;
+    }
+
+    public ArrayList<String> getTestsList() {
+        return testsList;
+    }
+
+    public void setTestsList(ArrayList<String> testsList) {
+        this.testsList = testsList;
+    }
+
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        return null;
+    }
+}
 
     
