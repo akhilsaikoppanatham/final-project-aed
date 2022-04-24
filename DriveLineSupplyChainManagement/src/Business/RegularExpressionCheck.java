@@ -45,4 +45,24 @@ public class RegularExpressionCheck {
 //              return false;
         return true;
     }
+
+    public static boolean isValidPassword(String password) {
+        Pattern ptr = Pattern.compile("^[a-zA-Z0-9]+$", Pattern.CASE_INSENSITIVE);
+        Matcher m = ptr.matcher(password);
+        //          if(m.find())
+//            return true;
+//          else 
+//              return false;
+        return true;
+    }
+
+    public static boolean isValidPhoneNum(String contactNum) {
+        Pattern ptr = Pattern.compile("[0-9]{10}");  //("^(\\d{10})$");
+        Matcher m = ptr.matcher(contactNum);
+//          if(m.find())
+//            return true;
+//          else 
+//              return false;
+        return true;
+    }
 }
