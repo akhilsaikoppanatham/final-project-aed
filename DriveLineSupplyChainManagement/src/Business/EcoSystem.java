@@ -10,10 +10,11 @@ import java.util.ArrayList;
  *
  * @author yojanitammineni
  */
-public class EcoSystem extends Organization{
+public class EcoSystem extends Organization {
+
     private static EcoSystem business;
     private ArrayList<Network> networkList;
-    
+
     public static EcoSystem getInstance() {
         if (business == null) {
             business = new EcoSystem();
@@ -32,5 +33,22 @@ public class EcoSystem extends Organization{
         ArrayList<Role> roleList = new ArrayList<Role>();
         roleList.add(new SystemAdminRole());
         return roleList;
+    }
+
+    private EcoSystem() {
+        super(null);
+        networkList = new ArrayList<Network>();
+    }
+
+    public ArrayList<Network> getNetworkList() {
+        return networkList;
+    }
+
+    public void setNetworkList(ArrayList<Network> networkList) {
+        this.networkList = networkList;
+    }
+
+    public boolean checkIfUserIsUnique(String userName) {
+        return true;
     }
 }
