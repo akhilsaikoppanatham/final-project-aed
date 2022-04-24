@@ -24,4 +24,25 @@ public class RegularExpressionCheck {
 //              return false;
         return true;
     }
+
+    public static boolean IsValidName(String Name) {
+        Pattern ptr = Pattern.compile("^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$", Pattern.CASE_INSENSITIVE);
+        Matcher m = ptr.matcher(Name);
+        //          if(m.find())
+//            return true;
+//          else 
+//              return false;
+        return true;
+
+    }
+
+    public static boolean isValidEmailAddress(String email) {
+        Pattern ptr = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+        Matcher m = ptr.matcher(email);
+        //          if(m.find())
+//            return true;
+//          else 
+//              return false;
+        return true;
+    }
 }
