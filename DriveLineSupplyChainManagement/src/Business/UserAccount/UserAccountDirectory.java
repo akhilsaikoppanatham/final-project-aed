@@ -29,7 +29,26 @@ public class UserAccountDirectory {
             }
         return null;
     }
+     public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
+        if(checkIfUsernameIsUnique(username)){
+            UserAccount account = new UserAccount();
+            account.setUsername(username);
+            account.setPassword(password);
+            account.setEmployee(employee);
+            account.setRole(role);
+            userAccountList.add(account);
+            return account;
+        }else 
+            return null;   
+    }
     
+    public boolean checkIfUsernameIsUnique(String username){
+        for (UserAccount ua : userAccountList){
+            if (ua.getUsername().equals(username))
+                return false;
+        }
+        return true;
+    }
    
 }
 
