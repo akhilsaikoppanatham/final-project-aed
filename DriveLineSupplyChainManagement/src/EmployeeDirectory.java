@@ -27,5 +27,13 @@ public class EmployeeDirectory {
         employeeList.add(employee);
         return employee;
     }
+     public boolean searchEmployee(String employeeName) {
+        for (Employee employee : this.getEmployeeList()) {
+            if (employee.getName().equals(employeeName)) {
+                return true;
+            }
+        }
+        return false;
+    }
     
 }
