@@ -27,7 +27,7 @@ public class WorkRequest {
     public String getMessage() {
         return message;
     }
-    
+
     public void setMessage(String message) {
         this.message = message;
     }
@@ -35,7 +35,8 @@ public class WorkRequest {
     public UserAccount getSender() {
         return sender;
     }
-     public void setSender(UserAccount sender) {
+
+    public void setSender(UserAccount sender) {
         this.sender = sender;
     }
 
@@ -55,4 +56,24 @@ public class WorkRequest {
         this.status = status;
     }
 
+    public Date getRequestDate() {
+        return requestDate;
+    }
+
+    public void setRequestDate(Date requestDate) {
+        this.requestDate = requestDate;
+    }
+
+    public Date getResolveDate() {
+        return resolveDate;
+    }
+
+    public void setResolveDate(Date resolveDate) {
+        this.resolveDate = resolveDate;
+    }
+
+    @Override
+    public String toString() {
+        return this.getMessage();
+    }
 }
