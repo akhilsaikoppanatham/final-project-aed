@@ -21,4 +21,14 @@ public class WorkQueue {
         return workRequestList;
     }
     
+    public boolean searchRequest(String patientName, String testName) {
+        for (WorkRequest request : workRequestList) {
+            GarageWorkRequest result = (GarageWorkRequest) request;
+            if (result.getAutomobileName().equals(patientName) && result.getTestName().equals(testName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
 }
