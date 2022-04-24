@@ -11,8 +11,7 @@ import javax.swing.JPanel;
  *
  * @author akhilsaikoppanatham
  */
-public class Role {
-
+public abstract class Role {
     public enum RoleType {
         Admin("Admin"),
         DealerRole("DealerRole"),
@@ -40,7 +39,6 @@ public class Role {
             return value;
         }
     }
-
     public abstract JPanel createWorkArea(JPanel userProcessContainer,
             UserAccount account,
             Organization organization,

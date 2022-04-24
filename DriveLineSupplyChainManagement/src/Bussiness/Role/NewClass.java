@@ -16,5 +16,4 @@ public class SalesManagerRole extends Role {
     public JPanel createWorkArea(JPanel rightPanel, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business) {
         return new SalesManagerWorkAreaJPanel(rightPanel, enterprise, account, business);
     }
-
 }
