@@ -8,6 +8,15 @@ package Business.WorkQueue;
  *
  * @author akhilsaikoppanatham
  */
-public class garageMechanicWorkRequest {
-    
+public class garageMechanicWorkRequest extends WorkRequest {
+
+    private String automobileName;
+
+    public String getAutomobileName() {
+        return automobileName;
+    }
+
+    public void setAutomobileName(String automobileName) {
+        this.automobileName = automobileName;
+    }
 }
