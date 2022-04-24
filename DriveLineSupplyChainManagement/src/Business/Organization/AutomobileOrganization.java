@@ -8,6 +8,9 @@ package Business.Organization;
  *
  * @author yojanitammineni
  */
-public class AutomobileOrganization {
-    
+public class AutomobileOrganization extends Organization{
+
+    public AutomobileOrganization() {
+       super(Organization.Type.AutomobileOrganization.getValue());
+    } 
 }
