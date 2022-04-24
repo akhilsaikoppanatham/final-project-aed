@@ -30,5 +30,21 @@ public class GarageWorkRequest {
     public void setTestName(String testName) {
         this.testName = testName;
     }
+    public String getTestResult() {
+        return testResult;
+    }
+
+    public void setTestResult(String testResult) {
+        this.testResult = testResult;
+    }
+
+    public String getAutomobileName() {
+        return automobileName;
+    }
+
+    public void setAutomobileName(String automobileName) {
+        this.automobileName = automobileName;
+    }
+
 
 }
