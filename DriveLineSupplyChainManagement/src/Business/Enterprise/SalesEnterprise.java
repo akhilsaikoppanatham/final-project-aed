@@ -15,6 +15,7 @@ public class SalesEnterprise extends Enterprise {
     public SalesEnterprise(String name){
         super(name,Enterprise.EnterpriseType.SalesEnterprise);
     }
+    //updated
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
