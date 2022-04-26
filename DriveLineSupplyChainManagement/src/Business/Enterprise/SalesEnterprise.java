@@ -11,6 +11,6 @@ import java.util.ArrayList;
  *
  * @author nikki
  */
-public class SalesEnterprise {
+public class SalesEnterprise extends Enterprise {
     
 }
