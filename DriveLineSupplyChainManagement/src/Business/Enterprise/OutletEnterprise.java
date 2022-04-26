@@ -14,4 +14,9 @@ public class OutletEnterprise extends Enterprise {
     public OutletEnterprise(String name){
         super(name,EnterpriseType.OutletEnterprise);
     }
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        return null;
+    }
+    
 }
