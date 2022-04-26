@@ -12,5 +12,7 @@ import java.util.ArrayList;
  * @author nikki
  */
 public class SalesEnterprise extends Enterprise {
-    
+    public SalesEnterprise(String name){
+        super(name,Enterprise.EnterpriseType.SalesEnterprise);
+    }
 }
