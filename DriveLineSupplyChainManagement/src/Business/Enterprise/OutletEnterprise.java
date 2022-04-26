@@ -10,6 +10,8 @@ import java.util.ArrayList;
  *
  * @author nikki
  */
-public class OutletEnterprise {
-    
+public class OutletEnterprise extends Enterprise {
+    public OutletEnterprise(String name){
+        super(name,EnterpriseType.OutletEnterprise);
+    }
 }
