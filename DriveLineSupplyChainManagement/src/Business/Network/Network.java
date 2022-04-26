@@ -10,5 +10,7 @@ import Business.Enterprise.EnterpriseDirectory;
  * @author nikki
  */
 public class Network {
+    private String name;
+    private EnterpriseDirectory enterpriseDirectory;
     
 }
