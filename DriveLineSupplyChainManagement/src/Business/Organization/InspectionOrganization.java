@@ -14,7 +14,13 @@ import java.util.ArrayList;
  */
 public class InspectionOrganization extends Organization {
      public InspectionOrganization() {
-        super(Organization.Type.InspectionOrganization.getValues());
+        super(Organization.Type.InspectionOrganization.getValue());
+    }
+     @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new InspectionMechanicRole());
+        return roles;
     }
      
 }
