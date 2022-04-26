@@ -14,6 +14,14 @@ import java.util.ArrayList;
  *
  * @author nikki
  */
-public class Organization {
+public abstract class Organization {
+
+    private String name;
+    private WorkQueue workQueue;
+    private EmployeeDirectory employeeDirectory;
+    private UserAccountDirectory userAccountDirectory;
+    private AutomobileDirectory automobileDirectory;
+    private int organizationID;
+    private static int counter = 0;
     
 }
