@@ -32,4 +32,8 @@ public abstract class Organization {
         private Type(String value) {
             this.value = value;
         }
+        public String getValue() {
+            return value;
+        }
+    }
 }
