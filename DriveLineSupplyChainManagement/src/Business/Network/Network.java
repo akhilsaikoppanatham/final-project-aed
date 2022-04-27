@@ -24,6 +24,7 @@ public class Network {
     public EnterpriseDirectory getEnterpriseDirectory() {
         return enterpriseDirectory;
     }
+    //updated
     @Override
     public String toString(){
         return name;
