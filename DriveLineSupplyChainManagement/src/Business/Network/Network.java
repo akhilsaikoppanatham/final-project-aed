@@ -12,5 +12,10 @@ import Business.Enterprise.EnterpriseDirectory;
 public class Network {
     private String name;
     private EnterpriseDirectory enterpriseDirectory;
-    
+    public Network(){
+        enterpriseDirectory=new EnterpriseDirectory();
+    }
+    public String getName() {
+        return name;
+}
 }
