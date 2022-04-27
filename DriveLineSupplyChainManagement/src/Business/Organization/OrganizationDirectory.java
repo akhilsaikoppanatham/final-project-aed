@@ -20,4 +20,26 @@ public class OrganizationDirectory {
     public ArrayList<Organization> getOrganizationList() {
         return organizationList;
     }
+    public Organization createOrganization(Type type){
+        Organization organization = null;
+        if (type.getValue().equals(Type.DealerOrganization.getValue())){
+            organization = new DealerOrganization();
+            organizationList.add(organization);
+        }
+        else if (type.getValue().equals(Type.AutomobileOrganization.getValue())){
+            organization = new AutomobileOrganization();
+            organizationList.add(organization);
+        }
+         else if (type.getValue().equals(Type.InspectionOrganization.getValue())){
+            organization = new InspectionOrganization();
+            organizationList.add(organization);
+        }
+         else if (type.getValue().equals(Type.EnvironmentComplianceCheckOrganization.getValue())){
+            organization = new EnvironmentComplianceCheckOrganization();
+            organizationList.add(organization);
+        }
+         else if (type.getValue().equals(Type.GarageManagerOrganization.getValue())){
+            organization = new GarageManagerOrganization();
+            organizationList.add(organization);
+        }
 }
