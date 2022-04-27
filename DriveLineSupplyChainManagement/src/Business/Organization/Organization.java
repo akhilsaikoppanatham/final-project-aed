@@ -36,4 +36,14 @@ public abstract class Organization {
             return value;
         }
     }
+     public Organization(String name) {
+        this.name = name;
+        workQueue = new WorkQueue();
+        employeeDirectory = new EmployeeDirectory();
+        userAccountDirectory = new UserAccountDirectory();
+        automobileDirectory = new AutomobileDirectory();
+        organizationID = counter;
+        ++counter;
+    }
+
 }
