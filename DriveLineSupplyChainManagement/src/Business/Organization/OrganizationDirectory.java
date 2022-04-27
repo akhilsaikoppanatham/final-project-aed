@@ -42,4 +42,19 @@ public class OrganizationDirectory {
             organization = new GarageManagerOrganization();
             organizationList.add(organization);
         }
+        else if (type.getValue().equals(Type.GarageMechanicOrganization.getValue())){
+            organization = new GarageMechanicOrganization();
+            organizationList.add(organization);
+        }
+        else if (type.getValue().equals(Type.SalesManagerOrganization.getValue())){
+            organization = new SalesManagerOrganization();
+            organizationList.add(organization);
+        }
+        else if (type.getValue().equals(Type.SalesEmployeeOrganization.getValue())){
+            organization = new SalesEmployeeOrganization();
+            organizationList.add(organization);
+        }
+        return organization;
+    }
+}
 }
