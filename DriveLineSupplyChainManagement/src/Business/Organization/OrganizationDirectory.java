@@ -17,4 +17,7 @@ public class OrganizationDirectory {
     public OrganizationDirectory() {
         organizationList = new ArrayList();
     }
+    public ArrayList<Organization> getOrganizationList() {
+        return organizationList;
+    }
 }
