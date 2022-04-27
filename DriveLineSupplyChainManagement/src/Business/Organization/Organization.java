@@ -56,5 +56,17 @@ public AutomobileDirectory getAutomobileDirectory() {
     public static int getCounter() {
         return counter;
     }
+public static void setCounter(int counter) {
+        Organization.counter = counter;
+    }
 
+    public abstract ArrayList<Role> getSupportedRole();
+
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
+    }
+
+    public int getOrganizationID() {
+        return organizationID;
+    }
 }
