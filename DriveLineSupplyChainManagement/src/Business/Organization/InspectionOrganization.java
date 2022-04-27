@@ -14,6 +14,7 @@ import java.util.ArrayList;
  */
 public class InspectionOrganization extends Organization {
      public InspectionOrganization() {
-        super(Organization.Type.InspectionOrganization.getValue());
+        super(Organization.Type.InspectionOrganization.getValues());
     }
+     
 }
