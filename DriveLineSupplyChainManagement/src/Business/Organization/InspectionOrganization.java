@@ -12,6 +12,6 @@ import java.util.ArrayList;
  *
  * @author nikki
  */
-public class InspectionOrganization {
+public class InspectionOrganization extends Organization {
     
 }
