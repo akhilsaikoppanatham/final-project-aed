@@ -45,5 +45,16 @@ public abstract class Organization {
         organizationID = counter;
         ++counter;
     }
+public AutomobileDirectory getAutomobileDirectory() {
+        return automobileDirectory;
+    }
+
+    public void setAutomobileDirectory(AutomobileDirectory automobileDirectory) {
+        this.automobileDirectory = automobileDirectory;
+    }
+
+    public static int getCounter() {
+        return counter;
+    }
 
 }
