@@ -23,5 +23,13 @@ public abstract class Organization {
     private AutomobileDirectory automobileDirectory;
     private int organizationID;
     private static int counter = 0;
-    
+     public enum Type {
+        AutomobileOrganization("AutomobileOrganization"), DealerOrganization("DealerOrganization"), InspectionOrganization("InspectionOrganization"),
+        EnvironmentComplianceCheckOrganization("EnvironmentComplianceCheckOrganization"), GarageManagerOrganization("GarageManagerOrganization"), GarageMechanicOrganization("GarageMechanicOrganization"),
+        SalesManagerOrganization("SalesManagerOrganization"), SalesEmployeeOrganization("SalesEmployeeOrganization");
+        private String value;
+
+        private Type(String value) {
+            this.value = value;
+        }
 }
