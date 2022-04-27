@@ -12,5 +12,9 @@ import java.util.ArrayList;
  */
 public class OrganizationDirectory {
     
-    
+    private ArrayList<Organization> organizationList;
+
+    public OrganizationDirectory() {
+        organizationList = new ArrayList();
+    }
 }
