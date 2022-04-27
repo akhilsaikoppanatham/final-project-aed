@@ -69,4 +69,28 @@ public static void setCounter(int counter) {
     public int getOrganizationID() {
         return organizationID;
     }
+    public EmployeeDirectory getEmployeeDirectory() {
+        return employeeDirectory;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public WorkQueue getWorkQueue() {
+        return workQueue;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setWorkQueue(WorkQueue workQueue) {
+        this.workQueue = workQueue;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
