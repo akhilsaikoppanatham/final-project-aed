@@ -36,6 +36,23 @@ public class Specifications {
     public void setMileage(int mileage) {
         this.mileage = mileage;
     }
+    
+     public int getEngineRPM() {
+        return engineRPM;
+    }
+
+    public void setEngineRPM(int engineRPM) {
+        this.engineRPM = engineRPM;
+    }
+
+    public int getIgnitionLevel() {
+        return ignitionLevel;
+    }
+
+    public void setIgnitionLevel(int ignitionLevel) {
+        this.ignitionLevel = ignitionLevel;
+    }
+
 
     
 }
