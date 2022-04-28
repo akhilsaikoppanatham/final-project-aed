@@ -16,4 +16,10 @@ public class SalesManagerOrganization extends Organization {
     public SalesManagerOrganization() {
        super(Organization.Type.SalesManagerOrganization.getValue());
     }
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new SalesManagerRole());
+        return roles;
+    }
 }
