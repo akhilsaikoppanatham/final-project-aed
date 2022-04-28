@@ -12,6 +12,17 @@ import java.util.ArrayList;
  *
  * @author nikki
  */
-public class SalesEmployeeOrganization {
+public class SalesEmployeeOrganization extends Organization{
+
+    public SalesEmployeeOrganization() {
+       super(Organization.Type.SalesEmployeeOrganization.getValue());
+    }
+
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new SalesEmployeeRole());
+        return roles;
+    }
     
 }
