@@ -13,5 +13,7 @@ import java.util.ArrayList;
  */
 public class SalesManagerOrganization extends Organization {
     
-    
+    public SalesManagerOrganization() {
+       super(Organization.Type.SalesManagerOrganization.getValue());
+    }
 }
