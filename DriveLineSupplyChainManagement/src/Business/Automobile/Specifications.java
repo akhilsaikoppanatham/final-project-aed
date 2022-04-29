@@ -52,6 +52,22 @@ public class Specifications {
     public void setIgnitionLevel(int ignitionLevel) {
         this.ignitionLevel = ignitionLevel;
     }
+    public float getAutomobileWeight() {
+        return automobileWeight;
+    }
+
+    public void setAutomobileWeight(float automobileWeight) {
+        this.automobileWeight = automobileWeight;
+    }
+
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
+
 
 
     
