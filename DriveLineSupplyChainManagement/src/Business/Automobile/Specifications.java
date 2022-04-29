@@ -11,6 +11,7 @@ import java.util.Date;
  * @author yojanitammineni
  */
 public class Specifications {
+
     private int mileage;
     private int engineRPM;
     private int ignitionLevel;
@@ -21,7 +22,8 @@ public class Specifications {
     public Specifications() {
         
     }
-     public int getBodyLength() {
+
+    public int getBodyLength() {
         return bodyLength;
     }
 
@@ -36,8 +38,8 @@ public class Specifications {
     public void setMileage(int mileage) {
         this.mileage = mileage;
     }
-    
-     public int getEngineRPM() {
+
+    public int getEngineRPM() {
         return engineRPM;
     }
 
@@ -52,6 +54,7 @@ public class Specifications {
     public void setIgnitionLevel(int ignitionLevel) {
         this.ignitionLevel = ignitionLevel;
     }
+
     public float getAutomobileWeight() {
         return automobileWeight;
     }
@@ -68,7 +71,7 @@ public class Specifications {
         this.time = time;
     }
 
-
+}
 
     
-}
+
