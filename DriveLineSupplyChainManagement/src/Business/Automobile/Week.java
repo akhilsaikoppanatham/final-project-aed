@@ -28,6 +28,17 @@ public class Week {
     public Specifications getSpecification() {
         return specifications;
     }
+     public void setSpecification(Specifications specifications) {
+        this.specifications = specifications;
+    }
+
+    public String getWeekStatus() {
+        return weekStatus;
+    }
+
+    public void setWeekStatus(String weekStatus) {
+        this.weekStatus = weekStatus;
+    }
 
 
     
