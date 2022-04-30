@@ -4,6 +4,7 @@
  */
 package Business.Organization;
 
+import Business.Role.Role;
 import java.util.ArrayList;
 
 /**
@@ -14,8 +15,9 @@ public class AutomobileOrganization extends Organization{
 
     public AutomobileOrganization() {
        super(Organization.Type.AutomobileOrganization.getValue());
-    } 
-     @Override
+    }
+
+    @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
         return roles;
