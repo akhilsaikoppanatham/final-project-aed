@@ -9,5 +9,8 @@ package Business.Organization;
  * @author yojanitammineni
  */
 public class DealerOrganization {
+    public DealerOrganization() {
+        super(Organization.Type.DealerOrganization.getValue());
+    }
     
 }
