@@ -4,13 +4,21 @@
  */
 package Business.Organization;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author yojanitammineni
  */
-public class DealerOrganization {
+public class DealerOrganization extends Organization{
     public DealerOrganization() {
         super(Organization.Type.DealerOrganization.getValue());
+    }
+     @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new DealerRole());
+        return roles;
     }
     
 }
