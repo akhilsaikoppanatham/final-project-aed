@@ -9,5 +9,26 @@ package Business.Automobile;
  * @author yojanitammineni
  */
 public class Week {
+    private String weekName;
+    private String weekStatus;
+    private Specifications specifications;
+    
+     public Week() {
+        this.specifications = new Specifications();
+    }
+
+    public String getWeekName() {
+        return weekName;
+    }
+
+    public void setWeekName(String weekName) {
+        this.weekName = weekName;
+    }
+
+    public Specifications getSpecification() {
+        return specifications;
+    }
+
+
     
 }
