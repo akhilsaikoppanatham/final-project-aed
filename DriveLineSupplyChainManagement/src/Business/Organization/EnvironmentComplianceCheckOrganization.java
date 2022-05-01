@@ -4,6 +4,8 @@
  */
 package Business.Organization;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author yojanitammineni
@@ -12,5 +14,9 @@ public class EnvironmentComplianceCheckOrganization {
     public EnvironmentComplianceCheckOrganization() {
         super(Type.EnvironmentComplianceCheckOrganization.getValue());
     }
+    
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
     
 }
