@@ -18,5 +18,9 @@ public class EnvironmentComplianceCheckOrganization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
+         roles.add(new EnvironmentCompilanceCheckMechanicRole());
+        return roles;
+    }
+     
     
 }
