@@ -9,5 +9,9 @@ package Business.Organization;
  * @author yojanitammineni
  */
 public class GarageMechanicOrganization {
+    public GarageMechanicOrganization() {
+        super(Type.GarageMechanicOrganization.getValue());
+    }
+    
     
 }
