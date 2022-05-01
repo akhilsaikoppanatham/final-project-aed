@@ -19,7 +19,7 @@ public class GarageMechanicOrganization extends Organization{
         super(Type.GarageMechanicOrganization.getValue());
     }
     
-    @Overridee
+    @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
         roles.add(new GarageMechanicRole());
