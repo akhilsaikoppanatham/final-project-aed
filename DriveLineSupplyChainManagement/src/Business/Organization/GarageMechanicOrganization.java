@@ -4,6 +4,8 @@
  */
 package Business.Organization;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author yojanitammineni
@@ -11,6 +13,12 @@ package Business.Organization;
 public class GarageMechanicOrganization {
     public GarageMechanicOrganization() {
         super(Type.GarageMechanicOrganization.getValue());
+    }
+     @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new GarageMechanicRole());
+        return roles;
     }
     
     
