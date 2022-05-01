@@ -1,17 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Business.Automobile;
 
-import java.util.ArrayList;
 import Business.UserAccount.UserAccount;
+import java.util.ArrayList;
 
 /**
  *
  * @author yojanitammineni
  */
 public class Automobile {
+
     private String ownerName;
     private String ownerContact;
     private String name;
@@ -32,7 +30,7 @@ public class Automobile {
     private String garageStatus;
     private UserAccount assignedDealer;
     private String status;
-    
+
     public UserAccount getAssignedDealer() {
         return assignedDealer;
     }
@@ -219,7 +217,7 @@ public class Automobile {
     public void setOwnerContact(String ownerContact) {
         this.ownerContact = ownerContact;
     }
-    
+
     public boolean isAutomobileInGoodCondition(double age, int r, int h, int b, float wk, float temp) {
 //        if ((age >= 0.08) && (age < 1)) {
 //            return (r >= 20) && (r < 30) && (h >= 80) && (h < 140) && (b >= 70) && (b < 100) && (wk >= 4) && (wk < 10) && (temp >= 97.5) && (temp < 100.4);
@@ -250,6 +248,4 @@ public class Automobile {
     public String toString() {
         return this.getName();
     }
-
-    
 }
