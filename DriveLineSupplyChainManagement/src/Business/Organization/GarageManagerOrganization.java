@@ -4,10 +4,22 @@
  */
 package Business.Organization;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author yojanitammineni
  */
 public class GarageManagerOrganization {
+    public GarageManagerOrganization() {
+        super(Type.GarageManagerOrganization.getValue());
+    }
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new GarageManagerRole());
+        return roles;
+    }
+     
     
 }
