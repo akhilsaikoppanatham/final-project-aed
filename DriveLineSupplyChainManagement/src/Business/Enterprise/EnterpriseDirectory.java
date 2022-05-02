@@ -1,16 +1,19 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Enterprise;
+
 import Business.Organization.OrganizationDirectory;
 import java.util.ArrayList;
 
 /**
  *
- * @author nikki
+ * @author akhilsaikoppanatham
  */
 public class EnterpriseDirectory {
+
     private ArrayList<Enterprise> enterpriseList;
 
     public ArrayList<Enterprise> getEnterpriseList() {
@@ -24,7 +27,8 @@ public class EnterpriseDirectory {
     public EnterpriseDirectory() {
         enterpriseList = new ArrayList<Enterprise>();
     }
-//Create enterprise
+
+    //Create enterprise
     public Enterprise createAndAddEnterprise(String name, Enterprise.EnterpriseType type) {
         Enterprise enterprise = null;
 
@@ -46,4 +50,5 @@ public class EnterpriseDirectory {
         }
         return enterprise;
 
+    }
 }

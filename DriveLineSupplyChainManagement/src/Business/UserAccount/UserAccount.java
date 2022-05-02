@@ -1,14 +1,19 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.UserAccount;
+
+import Business.Employee.Employee;
+import Business.Role.Role;
+import Business.WorkQueue.WorkQueue;
 
 /**
  *
  * @author akhilsaikoppanatham
  */
 public class UserAccount {
+
     private String username;
     private String password;
     private Employee employee;
@@ -58,5 +63,6 @@ public class UserAccount {
     @Override
     public String toString() {
         return username;
-    }Ï
+    }
+
 }

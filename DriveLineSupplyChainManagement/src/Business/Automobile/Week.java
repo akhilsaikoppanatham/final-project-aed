@@ -1,19 +1,23 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Automobile;
 
+import java.util.Date;
+
 /**
  *
- * @author yojanitammineni
+ * @author akhilsaikoppanatham
  */
 public class Week {
+
     private String weekName;
     private String weekStatus;
     private Specifications specifications;
-    
-     public Week() {
+
+    public Week() {
         this.specifications = new Specifications();
     }
 
@@ -28,7 +32,8 @@ public class Week {
     public Specifications getSpecification() {
         return specifications;
     }
-     public void setSpecification(Specifications specifications) {
+
+    public void setSpecification(Specifications specifications) {
         this.specifications = specifications;
     }
 
@@ -39,7 +44,7 @@ public class Week {
     public void setWeekStatus(String weekStatus) {
         this.weekStatus = weekStatus;
     }
-    
+
     public boolean isAutomobileInGoodCondition(double vehicleAge, int mileage, int engineRPM, int ignitionLevel, float vehicleWeight, float vehicleLength) {
 
 //        if ((vehicleAge >= 0.08) && (vehicleAge < 1)) {
@@ -66,7 +71,4 @@ public class Week {
     public String toString() {
         return this.getWeekName();
     }
-
-
-    
 }

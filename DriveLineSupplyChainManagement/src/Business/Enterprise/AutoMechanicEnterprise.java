@@ -1,14 +1,16 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Enterprise;
 
+import Business.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author nikki
+ * @author akhilsaikoppanatham
  */
 public class AutoMechanicEnterprise extends Enterprise {
 
@@ -18,6 +20,7 @@ public class AutoMechanicEnterprise extends Enterprise {
     private int minimumThreshold;
     private int maximumThreshold;
     private ArrayList<String> testsList;
+
     public AutoMechanicEnterprise(String name) {
         super(name, Enterprise.EnterpriseType.AutoMechanicEnterprise);
         this.testsList = new ArrayList<String>();
@@ -43,6 +46,7 @@ public class AutoMechanicEnterprise extends Enterprise {
     public void setAutomobileNumber(int automobileNumber) {
         this.automobileNumber = automobileNumber;
     }
+
     public String getFixType() {
         return fixType;
     }
@@ -50,7 +54,8 @@ public class AutoMechanicEnterprise extends Enterprise {
     public void setFixType(String fixType) {
         this.fixType = fixType;
     }
- public int getMinimumThreshold() {
+
+    public int getMinimumThreshold() {
         return minimumThreshold;
     }
 
@@ -79,5 +84,3 @@ public class AutoMechanicEnterprise extends Enterprise {
         return null;
     }
 }
-
-    

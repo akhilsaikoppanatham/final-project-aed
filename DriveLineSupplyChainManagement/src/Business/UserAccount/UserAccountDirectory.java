@@ -1,9 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.UserAccount;
 
+import Business.Employee.Employee;
+import Business.Role.Role;
 import java.util.ArrayList;
 
 /**
@@ -29,7 +31,8 @@ public class UserAccountDirectory {
             }
         return null;
     }
-     public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
+    
+    public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
         if(checkIfUsernameIsUnique(username)){
             UserAccount account = new UserAccount();
             account.setUsername(username);
@@ -49,6 +52,4 @@ public class UserAccountDirectory {
         }
         return true;
     }
-   
 }
-

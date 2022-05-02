@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Organization;
 
@@ -11,9 +11,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author yojanitammineni
+ * @author akhilsaikoppanatham
  */
-public class EnvironmentComplianceCheckOrganization {
+public class EnvironmentComplianceCheckOrganization extends Organization{
+
     public EnvironmentComplianceCheckOrganization() {
         super(Type.EnvironmentComplianceCheckOrganization.getValue());
     }
@@ -21,9 +22,8 @@ public class EnvironmentComplianceCheckOrganization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-         roles.add(new EnvironmentCompilanceCheckMechanicRole());
+        roles.add(new EnvironmentCompilanceCheckMechanicRole());
         return roles;
     }
      
-    
 }
