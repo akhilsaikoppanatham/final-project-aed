@@ -1,14 +1,15 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Organization;
+
 import Business.Organization.Organization.Type;
 import java.util.ArrayList;
 
 /**
  *
- * @author nikki
+ * @author akhilsaikoppanatham
  */
 public class OrganizationDirectory {
     
@@ -17,9 +18,11 @@ public class OrganizationDirectory {
     public OrganizationDirectory() {
         organizationList = new ArrayList();
     }
+
     public ArrayList<Organization> getOrganizationList() {
         return organizationList;
     }
+    
     public Organization createOrganization(Type type){
         Organization organization = null;
         if (type.getValue().equals(Type.DealerOrganization.getValue())){
@@ -42,7 +45,7 @@ public class OrganizationDirectory {
             organization = new GarageManagerOrganization();
             organizationList.add(organization);
         }
-        else if (type.getValue().equals(Type.GarageMechanicOrganization.getValue())){
+         else if (type.getValue().equals(Type.GarageMechanicOrganization.getValue())){
             organization = new GarageMechanicOrganization();
             organizationList.add(organization);
         }
@@ -56,5 +59,4 @@ public class OrganizationDirectory {
         }
         return organization;
     }
-}
 }

@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.WorkQueue;
 
@@ -10,7 +10,9 @@ import java.util.ArrayList;
  *
  * @author akhilsaikoppanatham
  */
+
 public class WorkQueue {
+
     private ArrayList<WorkRequest> workRequestList;
 
     public WorkQueue() {
@@ -20,7 +22,7 @@ public class WorkQueue {
     public ArrayList<WorkRequest> getWorkRequestList() {
         return workRequestList;
     }
-    
+
     public boolean searchRequest(String patientName, String testName) {
         for (WorkRequest request : workRequestList) {
             GarageWorkRequest result = (GarageWorkRequest) request;
@@ -30,5 +32,4 @@ public class WorkQueue {
         }
         return false;
     }
-    
 }

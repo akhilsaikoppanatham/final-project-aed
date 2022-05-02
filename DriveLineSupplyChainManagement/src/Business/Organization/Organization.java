@@ -1,8 +1,9 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Organization;
+
 import Business.Employee.EmployeeDirectory;
 import Business.Role.Role;
 import Business.UserAccount.UserAccountDirectory;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author nikki
+ * @author akhilsaikoppanatham
  */
 public abstract class Organization {
 
@@ -23,7 +24,8 @@ public abstract class Organization {
     private AutomobileDirectory automobileDirectory;
     private int organizationID;
     private static int counter = 0;
-     public enum Type {
+
+    public enum Type {
         AutomobileOrganization("AutomobileOrganization"), DealerOrganization("DealerOrganization"), InspectionOrganization("InspectionOrganization"),
         EnvironmentComplianceCheckOrganization("EnvironmentComplianceCheckOrganization"), GarageManagerOrganization("GarageManagerOrganization"), GarageMechanicOrganization("GarageMechanicOrganization"),
         SalesManagerOrganization("SalesManagerOrganization"), SalesEmployeeOrganization("SalesEmployeeOrganization");
@@ -32,11 +34,13 @@ public abstract class Organization {
         private Type(String value) {
             this.value = value;
         }
+
         public String getValue() {
             return value;
         }
     }
-     public Organization(String name) {
+
+    public Organization(String name) {
         this.name = name;
         workQueue = new WorkQueue();
         employeeDirectory = new EmployeeDirectory();
@@ -45,7 +49,8 @@ public abstract class Organization {
         organizationID = counter;
         ++counter;
     }
-public AutomobileDirectory getAutomobileDirectory() {
+
+    public AutomobileDirectory getAutomobileDirectory() {
         return automobileDirectory;
     }
 
@@ -56,7 +61,8 @@ public AutomobileDirectory getAutomobileDirectory() {
     public static int getCounter() {
         return counter;
     }
-public static void setCounter(int counter) {
+
+    public static void setCounter(int counter) {
         Organization.counter = counter;
     }
 
@@ -69,6 +75,7 @@ public static void setCounter(int counter) {
     public int getOrganizationID() {
         return organizationID;
     }
+
     public EmployeeDirectory getEmployeeDirectory() {
         return employeeDirectory;
     }
@@ -93,4 +100,5 @@ public static void setCounter(int counter) {
     public String toString() {
         return name;
     }
+
 }

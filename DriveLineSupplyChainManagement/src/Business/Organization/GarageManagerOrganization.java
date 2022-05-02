@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Organization;
 
@@ -11,12 +11,14 @@ import java.util.ArrayList;
 
 /**
  *
- * @author yojanitammineni
+ * @author akhilsaikoppanatham
  */
-public class GarageManagerOrganization {
+public class GarageManagerOrganization extends Organization{
+
     public GarageManagerOrganization() {
         super(Type.GarageManagerOrganization.getValue());
     }
+    
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
@@ -24,5 +26,4 @@ public class GarageManagerOrganization {
         return roles;
     }
      
-    
 }
