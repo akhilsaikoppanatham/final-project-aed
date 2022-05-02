@@ -10,6 +10,8 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+.DS_Store
+
 # Package Files #
 *.jar
 *.war
@@ -23,3 +25,15 @@
 hs_err_pid*
 /DriveLineSupplyChainManagement/nbproject/private/
 /DriveLineSupplyChainManagement/build/
+/DriveLineSupplyChainManagement/dist/
+# NetBeans specific #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+DriveLineSupplyChainManagement/build/built-jar.properties
+
+*/built-jar.properties
